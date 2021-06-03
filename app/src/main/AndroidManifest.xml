@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BudgetKeeper">
+        <activity android:name=".NewBillActivity"></activity>
+        <activity android:name=".NewExpenseActivity" />
+        <activity android:name=".BillsActivity" />
+        <activity android:name=".EnteringActivity" />
+        <activity android:name=".SingUpActivity" />
+        <activity android:name=".LogInActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
