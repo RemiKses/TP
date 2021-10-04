@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.demo.budgetkeeper">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.demo.budjetkeeperver2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -8,13 +11,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BudgetKeeper">
-        <activity android:name=".NewBillActivity"></activity>
-        <activity android:name=".NewExpenseActivity" />
-        <activity android:name=".BillsActivity" />
-        <activity android:name=".EnteringActivity" />
-        <activity android:name=".SingUpActivity" />
-        <activity android:name=".LogInActivity" />
+        android:theme="@style/Theme.BudjetKeeperVer2"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".TestChartActivity"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".categorydb.AddCategoryActivity" />
+        <activity android:name=".billsdb.AddBillActivity" />
+        <activity android:name=".notesdb.AddNoteActivity" />
+        <activity android:name=".MenuBillsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
